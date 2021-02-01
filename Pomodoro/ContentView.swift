@@ -2,20 +2,21 @@
 //  ContentView.swift
 //  Pomodoro
 //
-//  Created by Christopher Perault on 1/31/21.
+//  Created by Christopher Perault on 02/01/21.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, world!")
-            .padding()
-    }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
+        VStack {
+            TimeBar()
+            TimeLabel()
+            HStack {
+                TimeButton(startTime: 10)
+                TimeButton(startTime: 25)
+                TimeButton(startTime: 50)
+            }
+        }
     }
 }
