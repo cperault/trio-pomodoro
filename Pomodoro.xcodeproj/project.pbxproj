@@ -15,6 +15,7 @@
 		0017892F25C7996D006F883B /* TimeBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017892E25C7996D006F883B /* TimeBar.swift */; };
 		0017893225C79973006F883B /* TimeLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017893125C79973006F883B /* TimeLabel.swift */; };
 		0017893525C79BE0006F883B /* PomodoroModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0017893425C79BE0006F883B /* PomodoroModel.swift */; };
+		00B618CC25C9D60C00DBC920 /* DeviceModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00B618CB25C9D60C00DBC920 /* DeviceModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0017892E25C7996D006F883B /* TimeBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeBar.swift; sourceTree = "<group>"; };
 		0017893125C79973006F883B /* TimeLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeLabel.swift; sourceTree = "<group>"; };
 		0017893425C79BE0006F883B /* PomodoroModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PomodoroModel.swift; sourceTree = "<group>"; };
+		00B618CB25C9D60C00DBC920 /* DeviceModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0017893425C79BE0006F883B /* PomodoroModel.swift */,
+				00B618CB25C9D60C00DBC920 /* DeviceModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -168,6 +171,7 @@
 			files = (
 				0017893525C79BE0006F883B /* PomodoroModel.swift in Sources */,
 				0017892F25C7996D006F883B /* TimeBar.swift in Sources */,
+				00B618CC25C9D60C00DBC920 /* DeviceModel.swift in Sources */,
 				0017891B25C79480006F883B /* ContentView.swift in Sources */,
 				0017892B25C794D5006F883B /* TimeButton.swift in Sources */,
 				0017893225C79973006F883B /* TimeLabel.swift in Sources */,

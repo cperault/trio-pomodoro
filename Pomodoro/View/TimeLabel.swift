@@ -9,9 +9,8 @@ import SwiftUI
 
 struct TimeLabel: View {
     @EnvironmentObject var timerModel: PomodoroModel
-
-    let frameWidth: CGFloat = 100
-    let frameHeight: CGFloat = 100
+    @EnvironmentObject var deviceModel: DeviceModel
+    
     let frameAlignment: Alignment = .center
     let fontStyle: Font = .largeTitle
     
@@ -40,6 +39,14 @@ struct TimeLabel: View {
 // MARK: - Computed Properties
 
 extension TimeLabel {
+    var frameWidth: CGFloat {
+        return deviceModel.deviceWidth
+    }
+    
+    var frameHeight: CGFloat {
+        return deviceModel.deviceHeight
+    }
+    
     var timeRemainingString: String {
         String(timerModel.timeRemaining)
     }

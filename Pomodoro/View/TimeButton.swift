@@ -9,9 +9,8 @@ import SwiftUI
 
 struct TimeButton: View {
     @EnvironmentObject var timerModel: PomodoroModel
+    @EnvironmentObject var deviceModel: DeviceModel
     
-    let buttonWidth: CGFloat = 100
-    let buttonHeight: CGFloat = 100
     let buttonAlignment: Alignment = .center
     
     var startTime: Float
@@ -34,6 +33,14 @@ struct TimeButton: View {
 // MARK: - Computed Properties
 
 extension TimeButton {
+    var buttonWidth: CGFloat {
+        return deviceModel.deviceWidth
+    }
+    
+    var buttonHeight: CGFloat {
+        return deviceModel.deviceHeight
+    }
+    
     var buttonOpacity: Double {
         return (timerModel.timeIsActive) ? 0.3 : 1.0
     }

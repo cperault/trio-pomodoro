@@ -11,7 +11,7 @@ struct TimeBar: View {
     @EnvironmentObject var timerModel: PomodoroModel
     
     let width: CGFloat = 5
-    let height: CGFloat = 350
+    let height: CGFloat = 250
     let cornerRadius: CGFloat = 5
     let frameAlignment: Alignment = .center
     
@@ -26,6 +26,7 @@ struct TimeBar: View {
                 RoundedRectangle(cornerRadius: cornerRadius)
                     .foregroundColor(progressBarColor)
                     .frame(width: width, height: progressBarHeight, alignment: frameAlignment)
+                
             }
             .frame(width: width, height: height, alignment: frameAlignment)
         }
@@ -37,7 +38,7 @@ struct TimeBar: View {
 extension TimeBar {
     var progressBarHeight: CGFloat {
         if timerModel.timeIsActive == true {
-            return CGFloat(timerModel.timeRemaining / timerModel.startTime * 350)
+            return CGFloat(timerModel.timeRemaining / timerModel.startTime * 250)
         } else {
             return 0
         }
